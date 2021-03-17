@@ -1,0 +1,274 @@
+html, 
+body,
+.fullHeight,
+#__nuxt,
+#__layout {
+    height: 100%;
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+    color: black !important;
+}
+
+.page-enter-active, .page-leave-active {
+    transition: opacity 0.5s;
+  }
+  .page-enter, .page-leave-to {
+    opacity: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Poppins', 'Open Sans', sans-serif !important;
+}
+
+.ls-10 {
+  letter-spacing: 10px;
+}
+.dropzone {
+  padding: 5px 5px
+}
+
+.dropzone .dz-preview {
+  margin: 5px !important;
+}
+
+.dz-remove {
+  text-transform: none !important;
+  border: none !important;
+}
+
+[v-cloak] > * { display:none; }   
+
+.ls-5 {
+  letter-spacing: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn-orange:hover {
+  color: #fff;
+  background-color: #F49A0D;
+  border-color: rgb(255, 191, 81);
+}
+
+.bg-orange {
+  background-color: #F49A0D;
+}
+
+.centerText {
+  margin: 0 auto;
+}
+
+.ratio {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+}
+.img-circle {
+  border-radius: 50%;
+}
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 575.98px) { 
+  .text-mobile-center {
+    text-align: center !important;
+  }
+  .mb-mobile-5 {
+    margin-bottom: 5px !important;
+  }
+  .imgWrapper {
+    width: 40% !important;
+  }
+  .contentWrapper {
+    width: 60% !important;
+    padding-left: 20px;
+    padding-top: 15px !important;
+    padding-right: 20px;
+  }
+}
+
+.square {
+  position: relative;
+  width: 100%;
+}
+
+.square:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.photo:hover {
+  border: 1px solid skyblue;
+}
+
+.wordWrap {
+  word-wrap: break-word;
+}
+
+.imgWrapper {
+  width: 30%;
+}
+
+.contentWrapper {
+  width: 55%;
+  padding-left: 20px;
+  padding-top: 3rem;
+}
+
+.numbersWrapper {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 15%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+.bg-none {
+  background: none;
+  border-radius: 0px;
+}
+
+.border-5-black-bottom {
+  border-bottom: black solid 5px;
+}
+
+.border-5-white-bottom {
+  border-bottom: white solid 5px;
+}
+
+.offerTypeFilter:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.offerTypeFilter {
+  transition: all 0.4s ease;
+}
+
+.h-140 {
+  height: 140px;
+}
+
+.disabled {
+  pointer-events: all !important;
+}
+.tool-tip [disabled] {
+  pointer-events: none;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .vue-form-wizard.md .wizard-icon-circle {
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 20px !important;
+  }
+
+  .vue-form-wizard.md .wizard-navigation .wizard-progress-with-circle {
+    position: relative !important;
+    top: 30px !important;
+    height: 4px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .vue-form-wizard.md .wizard-icon-circle {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 16px !important;
+  }
+  .vue-form-wizard.md .wizard-navigation .wizard-progress-with-circle {
+    position: relative !important;
+    top: 25px !important;
+    height: 4px !important;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 575.98px) { 
+  #offer_type_id__label {
+    width: 50% !important;
+  }
+
+  #offer_type_id {
+    width: 50% !important;
+  }
+}
+
+.rectangle {
+  position: relative;
+  width: 100%;
+}
+
+.rectangle:after {
+  content: '';
+  display: block;
+  padding-bottom: 75%;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
+
+.btn-circle::after {
+  left: -.75em;
+    right: -.75em;
+    top: -.75em;
+    bottom: -.75em;
+    content: "";
+}
+
+/* Lazatu Buttons */
+.btn-lazatu-black {
+  color: #9FA5AE;
+  background-color: #090B12;
+  border-color: black;
+}
+
+.btn-lazatu-black:hover {
+  color: #F49A0D;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+.upperCase {
+  text-transform: uppercase !important;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.textCapitalize {
+  text-transform: capitalize;
+}
+
+#calendar {
+  box-shadow: 0 2px 0 rgba(90, 97, 105, 0.11),
+              0 4px 8px rgba(90, 97, 105, 0.12),
+              0 10px 10px rgba(90, 97, 105, 0.06),
+              0 7px 70px rgba(90, 97, 105, 0.1);
+}

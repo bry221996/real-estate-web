@@ -1,0 +1,23 @@
+.profile {
+    border-radius: 1rem;
+    color: #313435;
+
+    @include to($breakpoint-sm) {
+        margin-bottom: 2rem;
+    }
+
+    &__details {
+        @media (max-width: 399.98px) {
+            font-size: 11px;
+        }
+    }
+}
+
+.edit-profile {
+    border-radius: 1rem;
+    color: #313435;
+
+    .card-header {
+        background-color: $default-white;
+    }
+}

@@ -1,0 +1,179 @@
+table.dataTable tbody th, 
+table.dataTable thead th, 
+table.dataTable tbody td {
+    padding: 0.9rem;
+    font-size: 0.8rem;
+    color: $default-dark;
+    font-family: $font-family-poppins;
+    font-weight: 400;
+    text-transform: capitalize;
+
+    span {
+        font-size: 0.65rem;
+    }
+
+    .dtr-details .dtr-title,
+    .dtr-details .dtr-data {
+        font-size: 0.8rem;
+    }
+}
+
+table.dataTable>tbody>tr.child span.dtr-title {
+    display: inline-block;
+    min-width: 120px;
+    font-weight: bold;
+}
+
+table.dataTable thead th {
+    font-weight: 600;
+}
+
+.dataTables_wrapper .dataTables_length, 
+.dataTables_wrapper .dataTables_filter, 
+.dataTables_wrapper .dataTables_info, 
+.dataTables_wrapper .dataTables_processing, 
+.dataTables_wrapper .dataTables_paginate {
+    color: $default-dark;
+    font-weight: 300;
+    font-family: $font-family-poppins;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+    background: transparent;
+}
+
+.dataTables_length, .dataTables_info {
+    margin-left: 1rem;
+
+    @include to($breakpoint-ss) {
+        margin-left: 0;
+    }
+}
+
+.dataTables_length {
+    select {
+        font-family: $font-family-poppins;
+        color: $lazatu-info;
+        font-weight: 300;
+    }
+}
+
+.dataTables_filter, .dataTables_paginate {
+    margin-right: 1rem !important;
+
+    @include to($breakpoint-ss) {
+        margin-right: 0 !important;
+    }
+}
+
+table.dataTable thead tr th:first-child {
+    border-left: 1px solid $datatable-border;
+}
+
+table.dataTable.no-footer {
+    border-bottom: 1px solid $datatable-border
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    border-right: 1px solid $datatable-border;
+    border-top: 1px solid $datatable-border;
+    border-bottom: 1px solid $datatable-border;
+    background-color: #fbfbfb;
+}
+
+.dataTables_wrapper 
+.dataTables_paginate 
+.paginate_button {
+    color: $grey-600 !important;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+}
+
+.dataTables_wrapper 
+.dataTables_paginate 
+.paginate_button.current, 
+.dataTables_wrapper 
+.dataTables_paginate 
+.paginate_button.current:hover, 
+.dataTables_wrapper 
+.dataTables_paginate 
+.paginate_button:hover {
+    color: $default-white !important;
+    background: $grey-600;
+    border: none;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button  {
+    border-radius: 0.5rem;
+}
+
+.dataTables_wrapper .dataTables_processing  {
+    height: 80px;
+    z-index: 100;
+    color: $lazatu-grey;
+}
+
+.dataTables_filter input {
+    -webkit-appearance: searchfield;
+    color: $lazatu-info;
+}
+
+@include to($breakpoint-ss) {
+    div.dataTables_wrapper div.dataTables_filter input {
+        width: 200px;
+    }
+}
+
+.dtr-details li {
+    display: flex;
+    // align-items: center;
+}
+
+table.dataTable>tbody>tr.child ul.dtr-details {
+    display: block;
+}
+
+.action-button {
+    max-width: 2.5rem;
+}
+
+.datatable {
+    &__container {
+        box-shadow: 0 2px 0 rgba(90,97,105,.11), 
+                    0 4px 8px rgba(90,97,105,.12), 
+                    0 10px 10px rgba(90,97,105,.06), 
+                    0 7px 70px rgba(90,97,105,.1);
+    }
+}
+
+.dataTables_length,
+.dataTables_filter {
+    @include to($breakpoint-sm) {
+        width: 100%;
+        margin: 0 !important;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.dataTables_filter {
+    label {
+        @media (max-width: 480px) { 
+            display: flex;
+            justify-content: center;
+            align-items: center;        
+        }
+    }
+    @media (max-width: 480px) { 
+        flex-direction: column;
+    }
+
+    div.pull-right {
+        @media (max-width: 480px) { 
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;      
+        }
+    }
+}

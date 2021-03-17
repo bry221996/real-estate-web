@@ -1,0 +1,31 @@
+@import 'spec/settings/index';
+@import 'spec/tools/index';
+@import "~bootstrap/scss/bootstrap";
+@import 'spec/index';
+@import 'vendor/index';
+@import 'lazatu/index';
+@import 'components/index';
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+@media (max-width: 575.98px) {
+  .fc-button-group, .fc-today-button, .fc-left {
+    font-size: 60% !important;
+  }
+
+  .fc-center h2{
+    font-size: 15px !important;
+    margin-top: 15px;
+  }
+
+  .fc-day-header {
+    font-size: 60% !important;
+  }
+  .fc-toolbar h2 {
+    font-size: 60% !important;
+  }
+}

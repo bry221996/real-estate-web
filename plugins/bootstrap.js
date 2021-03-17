@@ -1,0 +1,1 @@
+import booststrap from 'bootstrap';
